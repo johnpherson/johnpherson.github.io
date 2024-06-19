@@ -78,10 +78,16 @@
             <img src="images/hn.png" alt="Project Image">
             <div class="description">
                 <h2>Hacker News AI Posts</h2>
-                <p>This is an Airflow project that pulls down the top ten most popular posts from Hacker News and analyses how many of them had the A.I. keyword in them on that day.
-                    This project uses Airflow for task orchestration and stores the data in PostgreSQL. I used a webhook to notify a Slack channel when the data pipeline has finished 
-                    and visualized the data in D3.
+                <p>I've been noticing a lot of AI posts on hacker News as of late and I was curious to see if what kind of an increase I would be seeing over time.
+                    This is by no means scientific, just a fin porject to kaap track of the AI topic in the top ten most opoular posts on HN. This DAG runs once a day and the 
+                    data is automatically updated.
                 </p>
+                <ul>
+                    <li>Used Airflow for orchestration</li>
+                    <li>Stored data in PostgreSQL</li>
+                    <li>Sent Slack notifications upon completion</li>
+                    <li>Visualized data with D3.js</li>
+                </ul>
                 <a href="https://github.com/johnpherson/airflow_projects/tree/main/airflow/dags" class="btn btn-primary">Airflow DAG</a>
                 <a href="https://github.com/johnpherson/hn_data_viz" class="btn btn-primary">Data Visualization</a>
             </div>

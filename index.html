@@ -38,6 +38,10 @@
             padding: 15px;
             background-color: #1e1e1e;
             border-radius: 10px;
+            text-align: left;
+        }
+        .description ul {
+            padding-left: 20px;
         }
         .btn-primary {
             background-color: #bb86fc;
@@ -52,7 +56,7 @@
             margin: 50px 0;
         }
         .details img {
-            max-width: 90%;
+            max-width: 80%;
             height: auto;
             border-radius: 10px;
         }
@@ -75,12 +79,12 @@
         <h1 class="my-4">Data Engineering Projects</h1>
         
         <div class="project">
-            <img src="images/hn.png" alt="Project Image">
+            <img src="images/airflow_layout.png" alt="Project Image">
             <div class="description">
                 <h2>Hacker News AI Posts</h2>
-                <p>I've been noticing a lot of AI posts on hacker News as of late and I was curious to see if what kind of an increase I would be seeing over time.
-                    This is by no means scientific, just a fin porject to kaap track of the AI topic in the top ten most opoular posts on HN. This DAG runs once a day and the 
-                    data is automatically updated.
+                <p>This is an Airflow project that pulls down the top ten most popular posts from Hacker News and analyses how many of them had the A.I. keyword in them on that day.
+                    This project uses Airflow for task orchestration and stores the data in PostgreSQL. I used a webhook to notify a Slack channel when the data pipeline has finished 
+                    and visualized the data in D3.
                 </p>
                 <ul>
                     <li>Used Airflow for orchestration</li>
@@ -102,6 +106,11 @@
                     <div class="description">
                         <h3>Airflow DAG</h3>
                         <p>This DAG hits the Hacker News endpoint to bring down the top ten most popular posts of the day.</p>
+                        <ul>
+                            <li>Daily data extraction</li>
+                            <li>Parallel task execution</li>
+                            <li>Error handling and retries</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -113,17 +122,27 @@
                     <div class="description">
                         <h3>Slack Notification</h3>
                         <p>Once the pipeline is completed, a message is posted to a Slack channel to inform me of the completed DAG.</p>
+                        <ul>
+                            <li>Real-time updates</li>
+                            <li>Customizable messages</li>
+                            <li>Integration with Slack API</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <img src="images/hn_dashbaord.png" alt="Detail Image 3">
+                    <img src="images/hn_dashboard.png" alt="Detail Image 3">
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="description">
                         <h3>Data Visualization</h3>
                         <p>The data is then visualized in a D3 dashboard.</p>
+                        <ul>
+                            <li>Interactive charts</li>
+                            <li>Real-time data updates</li>
+                            <li>Customizable views</li>
+                        </ul>
                     </div>
                 </div>
             </div>

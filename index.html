@@ -69,23 +69,32 @@
         <h1 class="my-4">Data Engineering Projects</h1>
         
         <div class="project">
-            <img src="images/airflow_layout.png" alt="Project 1">
-            <div class="Hacker News API">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/airflow_layout.png" alt="Project Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/slack_notification.png" alt="Project Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/hn_dashbaord.png" alt="Project Image 3">
+                </div>
+            </div>
+            <div class="description">
                 <h2>Hacker News AI Posts</h2>
-                <p>This is an Airflow project the pulls down the top ten most popular posts from Hacker News and analyses how many of them had the A.I. keyord in them on that day.
-                    This prject used Airflow for task orchestration and stored the data in postgres. I used a webhook to notify a slack channel when the data pipeline has finished 
-                    and visualized the data in D3
+                <p>This is an Airflow project that pulls down the top ten most popular posts from Hacker News and analyses how many of them had the A.I. keyword in them on that day.
+                    This project uses Airflow for task orchestration and stores the data in PostgreSQL. I used a webhook to notify a Slack channel when the data pipeline has finished 
+                    and visualized the data in D3.
                 </p>
                 <a href="https://github.com/johnpherson/airflow_projects/tree/main/airflow/dags" class="btn btn-primary">Airflow Project</a>
-                <a href="https://github.com/johnpherson/hn_data_viz" class="btn btn-primary">data Visualization</a>
+                <a href="https://github.com/johnpherson/hn_data_viz" class="btn btn-primary">Data Visualization</a>
             </div>
         </div>
-        
         
         <!-- Add more project sections as needed -->
     </div>
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 John Pherson. All Rights Reserved.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

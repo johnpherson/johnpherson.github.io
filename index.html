@@ -83,12 +83,13 @@
             <div class="description">
                 <h2>Hacker News AI Posts</h2>
                 <p>
-                    I've been noticing a lot of AI posts on <a href="https://news.ycombinator.com/">Hacker News</a> as of late and I was curious to see if what kind of an increase I would be seeing over time.
-                    This is by no means scientific, just a fun porject to kaap track of the AI topic in the top ten most popular posts on HN. This DAG runs once a day and the 
+                    I've been noticing a lot of AI posts on <a href="https://news.ycombinator.com/">Hacker News</a> as of late and I was curious to see if what kind of an increase I would be seeing over the next year.
+                    This is by no means scientific, just a fun project to keep track of the AI topic on HN. This DAG runs once a day and the 
                     data is automatically updated.
                 </p>
                 <ul>
                     <li>Used Airflow for orchestration.</li>
+                    <li>Airflow DAG kicked off everyday with cron (this is running on my home machine)</li>
                     <li>Stored data in PostgreSQL.</li>
                     <li>Sent Slack notifications upon completion.</li>
                     <li>Visualized data with D3.js.</li>

@@ -7,7 +7,15 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+            background-color: #121212;
+            color: #ffffff;
             padding-top: 56px;
+        }
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .container h1, .container p {
+            color: #e0e0e0;
         }
         .project {
             margin-bottom: 30px;
@@ -15,20 +23,31 @@
         .project img {
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
         }
         .project .description {
             padding: 15px;
-            background-color: #f9f9f9;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background-color: #bb86fc;
+            border-color: #bb86fc;
+        }
+        .btn-primary:hover {
+            background-color: #9b64e1;
+            border-color: #9b64e1;
         }
         footer {
             padding: 20px 0;
-            background-color: #f1f1f1;
+            background-color: #1f1f1f;
             text-align: center;
+            color: #e0e0e0;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">My Projects</a>
         </div>
@@ -36,8 +55,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="my-4">Welcome to My Project Showcase</h1>
-                <p>Here you'll find a collection of my projects. Click on each project to learn more.</p>
+                <h1 class="my-4 text-center">Welcome to My Project Showcase</h1>
+                <p class="text-center">Here you'll find a collection of my projects. Click on each project to learn more.</p>
             </div>
         </div>
         <div class="row project">
@@ -69,5 +88,8 @@
     <footer>
         <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

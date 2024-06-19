@@ -9,23 +9,32 @@
         body {
             background-color: #121212;
             color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding-top: 56px;
+            font-family: Arial, sans-serif;
         }
         .navbar {
             background-color: #1f1f1f;
+            width: 100%;
         }
-        .container h1, .container p {
-            color: #e0e0e0;
+        .container {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
         }
         .project {
             margin-bottom: 30px;
+            text-align: center;
         }
         .project img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+            margin-bottom: 15px;
         }
-        .project .description {
+        .description {
             padding: 15px;
             background-color: #1e1e1e;
             border-radius: 10px;
@@ -33,6 +42,7 @@
         .btn-primary {
             background-color: #bb86fc;
             border-color: #bb86fc;
+            margin-top: 10px;
         }
         .btn-primary:hover {
             background-color: #9b64e1;
@@ -43,46 +53,40 @@
             background-color: #1f1f1f;
             text-align: center;
             color: #e0e0e0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">My Projects</a>
+            <a class="navbar-brand mx-auto" href="#">My Projects</a>
         </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="my-4 text-center">Welcome to My Project Showcase</h1>
-                <p class="text-center">Here you'll find a collection of my projects. Click on each project to learn more.</p>
+        <h1 class="my-4">Welcome to My Project Showcase</h1>
+        <p>Here you'll find a collection of my projects. Click on each project to learn more.</p>
+        
+        <div class="project">
+            <img src="path/to/your/image1.jpg" alt="Project 1">
+            <div class="description">
+                <h2>Project Title 1</h2>
+                <p>A brief description of what the project is about. Highlight key features and functionalities.</p>
+                <a href="link-to-project-details.html" class="btn btn-primary">Read More</a>
             </div>
         </div>
-        <div class="row project">
-            <div class="col-md-4">
-                <img src="path/to/your/image1.jpg" alt="Project 1">
-            </div>
-            <div class="col-md-8">
-                <div class="description">
-                    <h2>Project Title 1</h2>
-                    <p>A brief description of what the project is about. Highlight key features and functionalities.</p>
-                    <a href="link-to-project-details.html" class="btn btn-primary">Read More</a>
-                </div>
+        
+        <div class="project">
+            <img src="path/to/your/image2.jpg" alt="Project 2">
+            <div class="description">
+                <h2>Project Title 2</h2>
+                <p>A brief description of what the project is about. Highlight key features and functionalities.</p>
+                <a href="link-to-project-details.html" class="btn btn-primary">Read More</a>
             </div>
         </div>
-        <div class="row project">
-            <div class="col-md-4">
-                <img src="path/to/your/image2.jpg" alt="Project 2">
-            </div>
-            <div class="col-md-8">
-                <div class="description">
-                    <h2>Project Title 2</h2>
-                    <p>A brief description of what the project is about. Highlight key features and functionalities.</p>
-                    <a href="link-to-project-details.html" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
+        
         <!-- Add more project sections as needed -->
     </div>
     <footer>

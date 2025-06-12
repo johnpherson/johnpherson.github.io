@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - John Pherson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #4f46e5;
+            --background-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+        body {
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            padding-top: 72px;
+        }
+        .navbar {
+            background-color: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+        }
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--text-primary) !important;
+        }
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        .about-header {
+            margin-bottom: 2rem;
+        }
+        .about-header img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+        .about-header h1 {
+            margin-bottom: 0.5rem;
+        }
+        .about-header h4 {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .lead {
+            color: var(--text-secondary);
+        }
+        .badge {
+            font-size: 1rem;
+        }
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        ul.list-inline {
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.4);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .about-header {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+            }
+            .about-header img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">John Pherson</a>
+            <div>
+                <a class="nav-link d-inline" href="about.html">About Me</a>
+                <a class="nav-link d-inline" href="index.html">Project Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="about-header d-flex align-items-center mb-4">
+            <img src="images/johnpherson_profile.jpg" alt="John Pherson">
+            <div>
+                <h1 class="mb-1">John Pherson</h1>
+                <h4 class="text-secondary mb-2">Data Engineer</h4>
+                <p class="lead">Experienced Data Engineer with a demonstrated history of working in the financial services industry. Skilled in ETL, AI, Snowflake, Python, Airflow, and Databricks.</p>
+                <a href="https://www.linkedin.com/in/johnpherson/" class="btn btn-primary" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <h3>Skills</h3>
+        <ul class="list-inline">
+            <li class="list-inline-item badge bg-primary m-1">ETL</li>
+            <li class="list-inline-item badge bg-primary m-1">AI</li>
+            <li class="list-inline-item badge bg-primary m-1">Snowflake</li>
+            <li class="list-inline-item badge bg-primary m-1">Python</li>
+            <li class="list-inline-item badge bg-primary m-1">Airflow</li>
+            <li class="list-inline-item badge bg-primary m-1">Databricks</li>
+            <li class="list-inline-item badge bg-primary m-1">Database Design</li>
+        </ul>
+        <h3>Experience</h3>
+        <div class="mb-3">
+            <strong>Cisco</strong> – Data / AI Engineer (Consultant), Jan 2025 – Present<br>
+            <span class="text-secondary">Remote</span>
+            <ul>
+                <li>Developed a unified data lake by integrating data from five distinct marketing sources, utilizing Fivetran for data ingestion.</li>
+                <li>Leveraged Vertex AI to generate automated documentation and auto-generate views from base tables.</li>
+                <li>Built robust ELT workflows using Python and SQL in a cloud-native architecture.</li>
+                <li>Integrated marketing data (Marketo) into Snowflake via Fivetran.</li>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <strong>Milestone Bank</strong> – Data Engineer (Consultant), Sep 2024 – Present<br>
+            <span class="text-secondary">Salt Lake City, UT (Hybrid)</span>
+            <ul>
+                <li>Led migration of legacy SQL Server databases to Snowflake using AWS and Airflow.</li>
+                <li>Designed and implemented ETL pipelines for efficient data extraction, transformation, and loading.</li>
+                <li>Optimized data integration and pipeline performance, reducing latency and enhancing accessibility.</li>
+            </ul>
+        </div>
+        <!-- Add more roles as desired, keeping each concise -->
+        <h3>Consulting & Hourly Rate</h3>
+        <p>
+            I am available for consulting and contract work, including:
+            <ul>
+                <li>AI integration (including Vertex AI, LangChain, and prompt engineering)</li>
+                <li>Data pipeline building and orchestration (Airflow, Fivetran, ELT/ETL design)</li>
+                <li>Cloud data warehousing (Snowflake, Databricks)</li>
+                <li>Python development for data engineering and automation</li>
+                <li>Database design and optimization (Postgres, SQL Server, etc.)</li>
+                <li>Data quality, validation, and monitoring solutions</li>
+                <li>Custom analytics and dashboarding</li>
+            </ul>
+            <strong>Hourly Rate: $200/hr</strong>
+        </p>
+        <p>
+            If you're interested in working together, please <a href="mailto:your.email@example.com">contact me</a> to discuss your project needs.
+        </p>
+        <h3>Contact</h3>
+        <ul>
+            <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/johnpherson/" target="_blank">linkedin.com/in/johnpherson</a></li>
+        </ul>
+    </div>
+</body>
+</html> 
